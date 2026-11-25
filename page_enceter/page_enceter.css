@@ -4,6 +4,7 @@
 
 body {
     background-color: rgb(41, 146, 17);
+    background-image: url(media/images/woodtexture.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,10 +65,6 @@ p {
 
 
 
-
-
-
-
 p a {
   display: inline !important;
   width: auto !important;
@@ -95,4 +92,27 @@ p a {
     main {
         width: 1200px;
     }
+}
+
+@media (max-width: 1199px) {
+    .maintitle {
+        display: none;
+    }
+
+    header  {
+
+        justify-content: center;
+        
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .naviglist {
+        font-size: 2rem;
+        gap: 2rem;
+    }
+
+
 }
