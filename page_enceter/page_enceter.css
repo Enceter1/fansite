@@ -72,7 +72,9 @@ p a {
   clear: none !important;
 }
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 849px) {
     main {
         width: 500px;
     }
@@ -82,17 +84,24 @@ p a {
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 850px) and (max-width: 1199px) {
     main {
-        width: 550px;
+        width: 700px;
+    }
+
+    p {
+        max-width: 600px;
     }
 }
 
 @media (min-width: 1200px) {
     main {
-        width: 1200px;
+        width: 1000px;
     }
 }
+
+
+
 
 @media (max-width: 1199px) {
     .maintitle {
