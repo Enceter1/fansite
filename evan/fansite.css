@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Rye&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+
+header{
+  position: sticky; /*permet de garder le header sur la page*/
+  top: 0;
+  z-index: 3; /*précise l'empilement à 3 (la + haute)*/
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 30px;
+  background-color: #4a2a14;
+  border-bottom: 4px solid #e3a52b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /*crée une ombre sur ma page */
+}
+
+.navigbar {
+  align-content : space-between;
+}
+
+.navigbar ul {
+  display: flex;
+  gap: 22px;  /*espace les balises*/
+  list-style: none;
+}
+
+.navigbar a {
+  color: #f6e4b0;
+  font-weight: 700;
+  letter-spacing: 1px;  /* espace les lettres */
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.navigbar .burger {
+    display: none;
+    position : absolute ;
+    top: 10px;
+    width: 20px;
+    right: 30px;
+}
+
+#Prst h1 {
+  margin: 0 0 20px;
+  font-family: "Rye", cursive;
+  text-transform: uppercase;
+  color: #4a2a14;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35);}
+
+/*::before et ::after sont des enfants de h1 et heritent des parametres de h1*/
+
+#Prst h1::before {
+  content: "Wanted";
+  display: block;
+  font-size: 0.5em;
+  letter-spacing: 4px;
+}
+
+#Prst h1::after {
+  content: "Reward";
+  display: block;
+  font-size: 0.5em;
+  letter-spacing: 4px;
+  color: red;
+}
+
+#Prst p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+section p {
+  font-size: 1em;
+  color: brown;
+  background-color: transparent;
+}
+
+section h2 {
+  font-size: 25px;
+  color: #000000;
+  font-family: "Franklin Gothic", "ITC Franklin Gothic", "Libre Franklin", Arial, sans-serif;
+}
+
+body {
+  margin: 1px;
+  min-height: 100vh;
+  font-family: "Old Standard TT", Georgia, serif;
+}
+
+body div {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 36px 40px 44px;
+  background: #ecd08b 65%;
+  border: 6px double brown;
+  border-radius: 4px;
+  box-shadow:
+    inset 0 0 70px rgba(107, 68, 35, 0.55);
+}
+
+div {
+  margin: 16px 12px;
+  padding: 24px 18px 32px;
+  text-align: center;
+}
+
+#image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#valider {
+  display: block;
+  margin: 32px auto 12px;
+  padding: 12px 36px;
+  font-family: "Rye", cursive;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: parchemin-clair;
+  background: rouge;
+  border: 3px solid brown;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  min-height: 56px;
+  background: #4a2a14;
+  border-top: 4px solid;
+}
+
+/* format mobile */
+
+@media (max-width: 700px) {
+  header {
+    flex-wrap: wrap;
+    padding: 10px 16px;
+  }
+
+  .navigbar {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .navigbar ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
